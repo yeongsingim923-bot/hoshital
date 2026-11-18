@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { color: inherit; text-decoration: none; }
+
+::selection {
+    background-color: #ccc;
+    color: #000;
+}
+
+#root {
+    width: 100%;
+    font-family: 'Pretendard';
+}
+
+/* 공통: 배경은 화면 끝까지, 내용은 가운데 1440px 안에 */
+.inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+header {
+    position: relative;
+    z-index: 30;                  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .topbar {
+    height: 31px;
+    background-color: #1F3477;
+    color: #FEFEFE;
+    border-bottom: 1px solid #515151;
+}
+
+header .topbar .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .topbar .topbar_info {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 33px;
+}
+
+header .topbar .topbar_info li:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .topbar .topbar_info li:nth-child(1) > img {
+    width: 24px;
+    height: auto;
+}
+
+header .topbar .topbar_util {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 15px;
+}
+
+header .topbar .topbar_util > li {
+    cursor: pointer;
+}
+
+header .navbar {
+    height: 82px;
+    background-color: #FEFEFE;
+    border-bottom: 1px solid #515151;
+}
+
+header .navbar .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .navbar_menu {
+    display: flex;
+    flex-direction: row;
+}
+
+header .navbar .navbar_menu h1 {
+    width: 162px;
+    height: 54px;
+    background-image: url(/Logo.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-size: 0;
+    margin: 10px 50px 18px 0;
+    cursor: pointer;
+}
+
+header .navbar .navbar_menu .navbar_menu-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .navbar .navbar_menu .navbar_menu-item > li {
+    cursor: pointer;
+}
+
+header .navbar .navber_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+header .navbar .navber_item .navbar_btn-reserve {
+    width: 134px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 64px;
+    background-color: #1F3477;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 11px;
+    cursor: pointer;
+}
+
+header .navbar .navber_item .navbar_btn-reserve img {
+    width: 18px;
+    height: 18px;
+}
+
+header .navbar .navber_item .navbar_btn-menu img {
+    width: 28px;
+}
+
+/* ===== 메가 메뉴 ===== */
+header .navbar {
+    position: relative;           /* 메뉴 판의 기준 */
+}
+
+/* 대메뉴: 칸 폭을 고정해야 아래 열과 줄이 맞아요 */
+header .navbar .gnb_item {
+    position: relative;
+    width: 130px;
+    height: 81px;                 /* navbar 높이와 같게 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gnb_title {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* 대메뉴 밑줄: 칸 폭 안에서 가운데부터 천천히 늘어나요 */
+header .navbar .gnb_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background: #1F3477;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+}
+
+header .navbar .gnb_item:hover::after {
+    transform: scaleX(1);
+}
+
+/* 하위 메뉴 열: 대메뉴 바로 아래 */
+.gnb_sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    padding-top: 28px;
+    border-left: 1px solid #DCE3F0;
+    z-index: 20;
+    opacity: 0;                   /* 평소엔 숨김 (display 대신 투명도로) */
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.gnb_item:last-child .gnb_sub {
+    border-right: 1px solid #DCE3F0;
+}
+
+.navbar.is-open .gnb_sub {
+    opacity: 1;                   /* 메뉴 판 열리면 천천히 보이기 */
+    visibility: visible;
+}
+
+/* 같은 계열 표시: 하늘색 열 (호버) */
+.gnb_item:hover .gnb_sub {
+    background-color: #DCE4FF;
+}
+
+.gnb_group {
+    list-style: none;
+    text-align: center;
+}
+
+.gnb_group + .gnb_group {
+    margin-top: 20px;
+}
+
+.gnb_group-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 0;
+}
+
+.gnb_link {
+    display: block;
+    padding: 8px 0;
+    white-space: nowrap;          /* 긴 메뉴가 두 줄로 꺾이지 않게 */
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+    transition: color 0.2s ease;
+}
+
+/* 하위 메뉴 하나 (호버): 파란 박스 + 흰색 굵은 글자 */
+.gnb_link:hover {
+    background-color: #1F3477;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* 메뉴 판 배경 + 남색 띠 */
+.mega {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.navbar.is-open .mega {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega_bg {
+    height: 380px;
+    background: #ffffff;
+    border-top: 1px solid #DCE3F0;
+}
+
+.mega_bar {
+    height: 97px;
+    background: #1F3477;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.mega_bar .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.mega_bar strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mega_tel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;            /* 전화부터 오른쪽으로 밀기 */
+}
+
+.mega_tel img {
+    width: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.mega_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 21px;
+    background: #ffffff;
+    color: #1F3477;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.mega_btn img {
+    width: 18px;
+}
+
+/* 뒤 화면 어둡게 */
+.mega_dim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;                  /* 헤더 뒤, 본문 위 */
+    pointer-events: none;         /* 마우스가 통과하게 (메뉴 닫힘이 정상 작동) */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.navbar.is-open .mega_dim {
+    opacity: 1;
+    visibility: visible;
+}

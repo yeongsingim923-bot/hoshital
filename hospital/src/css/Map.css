@@ -1,0 +1,35 @@
+.map-box {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.location {
+    padding-top: 14px;
+    padding-bottom: 25px;
+}
+
+.location-text {
+    text-align: center;
+    padding-bottom: 12px ;
+}
+
+.location-text p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 5%;
+    color: #8E99BE;
+}
+
+.location-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2B2323;
+}
+
+.map-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-left: 1px solid #C0CFFF;
+    border-right: 1px solid #C0CFFF;
+}

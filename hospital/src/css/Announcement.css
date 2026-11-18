@@ -1,0 +1,90 @@
+.announcement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 23px 147px 35px 147px;
+}
+
+.announcement h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2B2323;
+    padding: 0 0 13px 0;
+}
+
+.notification-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.time-box,
+.notice-box {
+    background-color: #E6E6E6;
+    border-radius: 12px;
+    padding: 20px 23px;
+    border: 1px solid #D4D4D4;
+}
+
+.time-list,
+.notice-list {
+    list-style: none;
+}
+
+.time-list li,
+.notice-list li,
+.notice-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #B4B4B4;
+    font-size: 16px;
+}
+
+.time-list li span:first-child {
+    color: #2B2323;
+    font-weight: 500;
+}
+
+.time-list li span:last-child {
+    color: #2B2323;
+    font-weight: 400;
+    width: 110px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-list li span.closed {
+    color: #e53935;
+    font-weight: 700;
+    text-align: center;
+}
+
+.notice-head p {
+    font-weight: 800;
+    color: #4B4B4B;
+}
+
+.notice-list li a {
+    color: #2B2323;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;   /* 제목이 길면 ... */
+    margin-right: 20px;
+}
+
+.notice-list li a:hover {
+    color: #1ba39c;
+    text-decoration: underline;
+}
+
+.notice-list li span {
+    flex-shrink: 0;            /* 날짜는 줄어들지 않게 */
+    color: #8E8D8D;
+    font-variant-numeric: tabular-nums;
+}

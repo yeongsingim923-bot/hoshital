@@ -1,0 +1,75 @@
+.main_hero {
+    width: 100%;
+    height: 545px;
+    background-image: url(/backgrund-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main_hero .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.main_hero .main_hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 123px 0 19px 0;
+}
+
+.main_hero .main_hero-text p:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 5%;
+    color: #4C4C51;
+    padding-bottom: 8px;
+}
+
+.main_hero .main_hero-text p:nth-child(2) {
+    font-size: 48px;
+    font-weight: 800;
+    color: #000D1F;
+    padding-bottom: 1px;
+}
+
+.main_hero .main_hero-text p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: #8F8F8F;
+}
+
+.main_hero .main_hero-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.main_hero .main_hero-btn .hero-btn-reservation {
+    width: 151px;
+    height: 53px;
+    background-color: #1F3477;
+    color: #EFFFFA;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main_hero .main_hero-btn .hero-btn-guide {
+    width: 151px;
+    height: 53px;
+    background-color: #EFF8FF;
+    color: #1F3477;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border: 1px solid #1F3477;
+    border-radius: 10px;
+    cursor: pointer;
+}
